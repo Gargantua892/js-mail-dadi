@@ -19,23 +19,17 @@ for (let i = 0; i < mail.length; i++){
 
     if(inputValue === listaArray){
         trueInput = true;
-
     }
 }
 
+// messaggio condizionale
 if (trueInput){
-    msg = "Ciaooooooo";
+    msg = "Bentornato sul nostro portale";
 }
 else{
-    msg = "Nooooooooo";
+    msg = "Hai sbagliato mail :( Riprova";
 }
-
-
-
-
-
-
-
 modal.innerHTML = msg;
 
 });
+
