@@ -1,7 +1,9 @@
 //definizione array contenente mail
 const mail = ["andrea@gmail.com", "simone@boolean.it", "massimo@boolean.it"];
-let i;
-const modal = document.getElementById("modal");
+const modal = document.getElementById("modal-body");
+let msg;
+let trueInput = false;
+
 
 
 //aggiunta eventListner al bottone
@@ -11,16 +13,29 @@ document.getElementById("invia-richiesta").addEventListener("click", function(){
     console.log(inputValue);
 
 //ciclare array con verifiche
-for (i = 0; i < mail.length; i++){
-console.log(mail[i]);
+for (let i = 0; i < mail.length; i++){
+    let listaArray = mail[i];
+    console.log(listaArray);
 
-if (mail[i] === inputValue){
-    console.log("Benvenuto");
-}else{
-    console.log("Riprova")
+    if(inputValue === listaArray){
+        trueInput = true;
+
+    }
 }
+
+if (trueInput){
+    msg = "Ciaooooooo";
 }
+else{
+    msg = "Nooooooooo";
+}
+
+
+
+
+
+
+
+modal.innerHTML = msg;
 
 });
-
-
