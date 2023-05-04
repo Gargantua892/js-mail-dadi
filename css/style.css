@@ -1,7 +1,22 @@
-body{
+main{
+    height: 100vh;
+}
+h5:not(.modal-title){
+    font-size: 64px;
+    color: grey;
+}
+
+#container-mail{
+    background-color: aliceblue;
     height: 100vh;
 }
 
-main{
-    height: 100%;
+#container-dadi{
+    background-color: #EEF1FC;
+    height: 100vh;
+}
+
+a#invia-richiesta, #modal .modal-content .btn{
+    background-color: #c4d4d3;
+    border-color: #c4d4d3;
 }
